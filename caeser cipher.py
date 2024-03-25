@@ -22,6 +22,20 @@ a8"     "" 88 88P'    "8a 88P'    "8a a8P_____88 88P'   "Y8
               88           
 """
 print(logo)
+
+def caeser(d,t,s):
+    end=''
+    if d=='decode':
+            s *= -1
+    for letters in t:
+        position=alphabets.index(letters)
+        new_position=position+s
+        end+=alphabets[new_position]
+    print(f'\nThe {d}d text is {end}.')
+
+caeser(d=direction,t=text,s=shift)   
+
+
 '''if direction=='encode':
     def encrypt(t,s):
         cipher_text=" "
@@ -45,16 +59,4 @@ elif direction=='decode':
 
     decrpyt(a=text,b=shift)
     '''
-
-def caeser(d,t,s):
-    end=''
-    if d=='decode':
-            s *= -1
-    for letters in t:
-        position=alphabets.index(letters)
-        new_position=position+s
-        end+=alphabets[new_position]
-    print(f'\nThe {d}d text is {end}.')
-
-caeser(d=direction,t=text,s=shift)           
 
