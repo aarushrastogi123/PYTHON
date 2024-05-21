@@ -38,7 +38,7 @@ while not end_of_game:
       
         if lives==0:
             end_of_game=True
-            print("Hangman got hung.\nYou lose")
+            print(f"Hangman got hung.\nYou lose.\n The word was {chosen_word}")
     
     print(stages[lives])
     
@@ -46,7 +46,7 @@ while not end_of_game:
     
     if a not in sym_list:
         end_of_game=True
-        print("You saved the Hangman.\nYou win!!!")
+        print(f"You saved the Hangman.\nYou win!!!.\n The word was {chosen_word}")
 
 
 
