@@ -9,6 +9,7 @@ def greet(func):
 greet(shout)
 greet(whisper)
 
+print('\n')
 names=['a','b','c','d']
 def addgreeting(name:str):
     return "Hello " + name
@@ -20,10 +21,12 @@ for i in (nameandgreeting):
 def is_even(num:int)->bool:
     return num%2!=0
 
+print('\n')
 nums=[1,2,3,4,5,6,7,8]
 evens=filter(is_even,nums)
 print(list(evens))
 
+print('\n')
 def higherorder(n:int)->int:
     return lambda x:x**n
 power3=higherorder(3)
@@ -32,6 +35,7 @@ for i in range(9):
     b.append(power3(i+1))
 print(b)
 
+print('\n')
 import collections
 Scientist=collections.namedtuple('Scientist', ['name','born','field'])
 # Define an immutable tuple for scientists
