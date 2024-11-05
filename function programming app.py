@@ -1,5 +1,5 @@
 
-'''def shout(text):
+def shout(text):
     return text.upper()
 def whisper(text):
     return text.lower()
@@ -7,9 +7,9 @@ def greet(func):
     greeting = func("Hi")
     print(greeting)
 greet(shout)
-greet(whisper)'''
+greet(whisper)
 
-'''names=['a','b','c','d']
+names=['a','b','c','d']
 def addgreeting(name:str):
     return "Hello " + name
 nameandgreeting=(map(addgreeting,names))
@@ -30,7 +30,7 @@ power3=higherorder(3)
 b=[]
 for i in range(9):
     b.append(power3(i+1))
-print(b)'''
+print(b)
 
 import collections
 Scientist=collections.namedtuple('Scientist', ['name','born','field'])
